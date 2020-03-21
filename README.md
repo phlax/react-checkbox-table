@@ -1,1 +1,1 @@
-# react-checkbox-table
+# @phlax/react-checkbox-table
