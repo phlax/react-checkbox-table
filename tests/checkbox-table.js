@@ -1,5 +1,4 @@
 
-
 import React from "react";
 
 import {shallow} from "enzyme";
@@ -16,8 +15,10 @@ test("CheckboxTable render", () => {
     expect(table.instance().columnSelect).toEqual(
         {"Cell": table.instance().renderCheckbox,
          "Header": table.instance().renderSelectAllCheckbox,
-         "accessor": "code",
-         "sortable": false,
+         "canResize": false,
+         "getColumnHeaderProps": table.instance().getColumnHeaderProps,
+         "id": "code",
+         "maxWidth": 45,
          "width": 45});
     expect(table.instance().defaultPageSize).toBe(10);
 });
