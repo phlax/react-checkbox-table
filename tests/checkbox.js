@@ -11,7 +11,7 @@ test("Checkbox render", () => {
     expect(checkbox.text()).toBe("");
     expect(checkbox.instance().el.indeterminate).toBe(false);
 
-    checkbox = shallow(<Checkbox indeterminate="true" />);
+    checkbox = shallow(<Checkbox indeterminate={true} />);
     expect(checkbox.text()).toBe("");
     expect(checkbox.instance().el.indeterminate).toBe(true);
     expect(checkbox.instance().el.nodeName).toBe(undefined);
